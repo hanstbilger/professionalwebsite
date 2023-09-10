@@ -1,0 +1,641 @@
+body {
+    padding-top: 6em;
+    margin: 0;
+    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.navbar {
+  background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+
+.nav-link,
+.navbar-brand {
+    color: black; !important
+    cursor: pointer;
+    font-size: 34px;
+    font-family: 'century_schoolbookregular', sans-serif;
+    margin-left: 2em;
+}
+
+.navbar-toggler{
+    font-size: 0.75em;
+    outline: none;
+    border: none;
+    padding:0em;
+    margin:0em;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+    margin-left: 1em !important;
+    font-family: 'century_schoolbookregular', serif;
+    font-size: 18px;
+    color: black;
+}
+
+.nav-item-current {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: #000000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.header {
+    background-image: url("assets/HauswifeCollage.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100%;
+}
+
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.overlay2 {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron-bio-text{
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  color: rgba(0,0,0,0.95);
+}
+
+.jumbotron-shows-text{
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  color: rgba(255,255,255, .95);
+}
+
+.jumbotron-discography-text{
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  color: rgba(0,0,0,0.95);
+  text-align: center;
+}
+
+.jumbotron-contact-text{
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-color: rgba(0,0,0,0.5);
+  text-align: right;
+  padding-top: 4em;
+}
+
+.jumbotron-epk-text{
+  font-family: 'EB Garamond', serif;
+  font-size: 5vw;
+  font-weight: 500;
+  color: rgba(204, 223, 241, 0.85);
+  text-align: center;
+  padding-top: 0%;
+  padding-right: 0%;
+}
+
+.jumbotron-fluid{
+  width: 100vw;
+}
+
+.epk.albumart{
+  margin-top: 3em;
+}
+
+.bio-text{
+  font-family: 'century_schoolbookregular';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  margin-top: 2em;
+  margin-left: 0em;
+  margin-right: 1em;
+  filter: blur(.1px);
+}
+
+.press-text{
+  font-family: 'century_schoolbookregular';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  margin-top: 2em;
+  margin-left: 0em;
+  margin-right: 1em;
+  filter: blur(.1px);
+}
+
+.science-text{
+  font-family: 'century_schoolbookregular';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  filter: blur(.1px);
+  text-align: left;
+  margin-bottom: 3em;
+}
+
+.epk-bio-text{
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.smallcaps{
+  font-family: 'century_schoolbookregular', serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+
+}
+
+.smalltext{
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.page-header{
+  font-family: 'Libre Franklin';
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: rgba(107,110,112,1);
+  filter: blur(0px);
+  padding-bottom: 0em;
+  padding-top: 0em;
+}
+
+.index-text{
+  font-family: 'Libre Franklin';
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: rgba(107,110,112,1);
+  filter: blur(0px);
+  padding-bottom: 0em;
+  padding-top: 0em;
+}
+@media only screen and (max-width: 576px) {
+  .index-text {
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+.show-text{
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-color: rgba(0,0,0,1);
+  margin-top: 0em;
+  padding-bottom: 0em;
+  martin-bottom: 0em;
+  padding-bottom: 0em;
+}
+
+.firstcharacter{
+  color: inherit;
+  float: left;
+  font-family: century_schoolbookregular;
+  font-size: 65px;
+  line-height: 55px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.epk-bio-text-bold{
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 160%;
+  font-color: rgba(0,0,0,1);
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+#jumbotron-shows{
+  background-image: url('assets/DSC3226_pointcrop.jpg');
+  background-size: cover;
+  background-position: 50% 65%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#jumbotron-discography{
+  background-image: url('assets/Fabi5_11-5-22.jpg');
+  background-size: cover;
+  background-position: 50% 40%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+#jumbotron-bio{
+  background-image: url('assets/DSC3320_serious.jpg');
+  background-size: cover;
+  background-position: 50% 9%;
+  padding-top: 13%;
+  padding-bottom: 13%;
+}
+
+#jumbotron-press{
+  background-image: url('assets/DSC3114_blue1.jpg');
+  background-size: cover;
+  background-position: 50% 35%;
+  padding-top: 20%;
+  paddint-bottom: 20%;
+}
+
+
+#jumbotron-epk{
+  background-image: url('assets/DSC3409_smile1crop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat bottom center;
+  background-position: 20% 22%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.epk-heading{
+    font-family: 'Helvetica Neue', serif;
+    font-weight: 300;
+    font-color: rgba(0,0,0,1);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.epk-subheading{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.25em;
+    font-weight: 500;
+    font-color: rgba(0,0,0,1);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.epk-heading-arbiter{
+    font-family: 'Helvetica Neue', serif;
+    font-weight: 300;
+    font-color: rgba(0,0,0,1);
+    margin-top: 25%;
+    margin-bottom: 1em;
+}
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+
+.footer {
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.95);
+    padding-top: 5%;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+
+.btn-epk-bio-photo{
+  border-color: black;
+  margin-top: 1em;
+  margin-right: 3em;
+}
+
+.btn-epk-socials{
+  margin-top: 0em;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.btn-epk-album-photo{
+  border-color: black;
+  margin-top: 1em;
+}
+
+.btn-epk-link-hans{
+  border-color: black;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  text-align: center
+}
+
+.btn-shows{
+  border-color: black;
+  padding-top: 3em;
+}
+
+.social-btns{
+  text-align: center;
+ }
+
+.btn-facebook{
+  padding-right: 2em;
+}
+
+.copyright{
+  text-align: center;
+  padding-top: 1em;
+}
+
+.features {
+	margin: 4em auto;
+	padding: 1em auto;
+	position: relative;
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+}
+
+.feature-title {
+	color: #333;
+  font-family: 'century_schoolbookregular', serif;
+	font-size: 1.1rem;
+	font-weight: 700;
+  text-align: center;
+}
+
+.feature-subtitle {
+	color: #333;
+  font-family: 'Libre Franklin', serif;
+	font-size: .9rem;
+	font-weight: 300;
+  text-align: center;
+}
+
+.pub-title {
+	color: #333;
+  font-family: 'century_schoolbookregular', serif;
+	font-size: 1.1rem;
+	font-weight: 700;
+  text-align: left;
+}
+
+.pub-subtitle {
+	color: #333;
+  font-family: 'Libre Franklin', serif;
+	font-size: .9rem;
+	font-weight: 300;
+  text-align: left;
+}
+
+.feature-link {
+	color: #333;
+  font-family: 'century_schoolbookregular', serif;
+	font-size: 1rem;
+	font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+.gig-list {
+	color: #333;
+  font-family: 'century_schoolbookregular', serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+  text-align: left;
+}
+
+.gig-date {
+	color: #333;
+  font-family: 'Libre Franklin', serif;
+	font-weight: 300;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.gig-loc {
+	color: #333;
+  font-family: 'Libre Franklin', serif;
+	font-weight: 300;
+  text-align: left;
+}
+
+.gig-pers {
+	color: #333;
+  font-family: 'Libre Franklin', serif;
+	font-weight: 300;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.container-contact{
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-color: rgba(0,0,0,1);
+  margin-top: 10em;
+  padding-bottom: 15em;
+}
+
+.carousel-inner > .carousel-item > img {
+  width:50vh;
+  height: 50vh;
+  object-fit: contain;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+@font-face {
+    font-family: 'century_schoolbookregular';
+    src: url('assets/censcbk-webfont.woff2') format('woff2'),
+         url('assets/censcbk-webfont.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'akzidenzgrotesk';
+    src: url('assets/akzidenz-grotesk-roman-webfont.woff2') format('woff2'),
+         url('assets/akzidenz-grotesk-roman-webfont.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'akzidenzgrotesk';
+    src: url('assets/akzidenz-grotesk-light-webfont.woff2') format('woff2'),
+         url('assets/akzidenz-grotesk-light-webfont.woff') format('woff');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'akzidenzgrotesk';
+    src: url('assets/akzidenz-grotesk-bold-webfont.woff2') format('woff2'),
+         url('assets/akzidenz-grotesk-bold-webfont.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'akzidenzgrotesk';
+    src: url('assets/akzidenz-grotesk-black-webfont.woff2') format('woff2'),
+         url('assets/akzidenz-grotesk-black-webfont.woff') format('woff');
+    font-weight: bolder;
+}
+
+.bio-photo{
+  width: 100%;
+  margin-top: 2em;
+  margin-left: -1em;
+}
+
+.index-photo{
+  width: 100%;
+  margin-top: 2em;
+  margin-left: -2em;
+  align-items: center;
+}
+
+.discography-photo figure{
+  width: 100%;
+}
+
+figcaption{
+  font-family: 'Libre Franklin';
+  font-size: 0.75em;
+  color: grey;
+  padding-top: 0em;
+  margin-left: -1em;
+  text-align: left;
+}
+
+press-figcaption{
+  font-family: 'Libre Franklin';
+  font-size: 0.75em;
+  color: grey;
+  padding-top: 0em;
+}
+
+index-figcaption{
+  font-family: 'Libre Franklin';
+  font-size: 0.75em;
+  color: grey;
+  padding-top: 0em;
+  margin-left: -2em;
+  margin-bottom: 2em
+}
+
+figure{
+  margin-left: 5em;
+  margin-bottom: 1%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.press-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.press-tile {
+  position: relative;
+  width: calc(33.33% - 20px);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.press-tile img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.press-tile p {
+  margin: 10px 0;
+  font-family:'century_schoolbookregular';
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .press-tile {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .press-tile {
+    width: 100%;
+  }
+}
+
+/* Add this class for the initial fade effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Add this class to apply the fade-in effect */
+.fade-in-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+b {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.ind {
+  text-indent: 50px;
+}
+
+.disc-margin {
+    margin-top: 0;
+  }
+@media only screen and (max-width: 576px) {
+  .disc-margin {
+    margin-top: 2em;
+  }
+}
+
+.ind-margin {
+    margin-top: 3em;
+  }
+@media only screen and (max-width: 576px) {
+  .ind-margin {
+    margin-top: 0em;
+  }
+}

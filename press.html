@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="has-sticky-footer" lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/CSBfont/stylesheet.css" type="text/css" charset="utf-8" />
+      <link rel="stylesheet" href="assets/AGfont/stylesheet.css" type="text/css" charset="utf-8" />
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+
+	<body>
+
+    <nav class="navbar navbar-expand-md py-2 fixed-top navbar-light">
+      <a class="navbar-brand" href="index.html">
+      <img src="assets/Signature_HB.png" width="150" height="67.5" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dates.html">Dates</a>
+          </li>
+          <li class="nav-item-current">
+            <a class="nav-link" href="bio.html">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-item-current" href="press.html"><u><em>Press</u></em></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="discography.html">Discography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="science.html">Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+
+
+  <main role="main">
+
+    <h4 class="text-center page-header fade-in" style="margin-bottom:1.4em;margin-top:3em">PRESS PHOTOS</h4>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+YzVn1Fzmkq4C0CVp5f5+A5F8t5n2F5U02tD" crossorigin="anonymous">
+        <style>
+            /* Custom styles */
+            .photo-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+            }
+            .photo-thumbnail {
+                position: relative;
+                margin: .5em;
+            }
+            .photo-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.3s;
+                cursor: pointer;
+            }
+            .photo-thumbnail:hover .photo-overlay {
+                opacity: 1;
+            }
+            .photo-attribution {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .download-link {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+            /* Responsive grid for small screens */
+            @media (max-width: 767px) {
+                .photo-grid {
+                    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container fade-in">
+            <div class="photo-grid">
+          <div class="d-flex flex-column">
+              <div class="photo-thumbnail">
+                  <img src="assets/Good-Child-Music-Hans-Bilger-26_small.jpg" alt="Photo 1" class="img-fluid">
+                <div class="photo-overlay" onclick="downloadPhoto('assets/Good-Child-Music-Hans-Bilger-26.jpg', 'HansBilger2_CreditMattAndrews.jpg')">
+                    <div class="photo-attribution">(c) Matt Andrews</div>
+                    <div class="download-link">Click to download</div>
+                </div>
+              </div>
+                <div class="photo-thumbnail">
+                    <img src="assets/Duppen_FilmOverlay.jpg" alt="Photo 2" class="img-fluid">
+                    <div class="photo-overlay" onclick="downloadPhoto('assets/Duppen_FilmOverlay.jpg', 'HansBilger2_CreditSusanneDuppen.jpg')">
+                        <div class="photo-attribution">(c) Susanne Duppen</div>
+                        <div class="download-link">Click to download</div>
+                    </div>
+                </div>
+            </div>
+          <div class="d-flex flex-column">
+            <div class="photo-thumbnail">
+                <img src="assets/Fabi5_11-5-22 2.jpg" alt="Photo 3" class="img-fluid">
+                <div class="photo-overlay" onclick="downloadPhoto('assets/Fabi5_11-5-22 2.jpg', 'HansBilger2_CreditFabianaStriffler.jpg')">
+                    <div class="photo-attribution">(c) Fabiana Striffler</div>
+                    <div class="download-link">Click to download</div>
+                </div>
+            </div>
+            <div class="photo-thumbnail">
+                <img src="assets/AirborneCharlie_2022-DUPPEN-26_cropsmall.jpg" alt="Photo 4" class="img-fluid">
+                <div class="photo-overlay" onclick="downloadPhoto('assets/AirborneCharlie_2022-DUPPEN-26_cropsmall.jpg', 'HansBilger1_CreditSusanneDuppen.jpg')">
+                    <div class="photo-attribution">(c) Susanne Duppen</div>
+                    <div class="download-link">Click to download</div>
+                </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="photo-thumbnail">
+                <img src="assets/IMG_3752.jpg" alt="Photo 1" class="img-fluid">
+              <div class="photo-overlay" onclick="downloadPhoto('assets/IMG_3752.jpg', 'HansBilger2_CreditFranziskaFriedmann.jpg')">
+                  <div class="photo-attribution">(c) Franziska Friedmann</div>
+                  <div class="download-link">Click to download</div>
+              </div>
+            </div>
+            <div class="photo-thumbnail">
+                <img src="assets/DSC3399_laughing.jpg" alt="Photo 1" class="img-fluid">
+              <div class="photo-overlay" onclick="downloadPhoto('assets/DSC3399_laughing.jpg', 'HansBilger_CreditLetitiaSmith.jpg')">
+                  <div class="photo-attribution">(c) Letitia Smith</div>
+                  <div class="download-link">Click to download</div>
+              </div>
+            </div>
+            </div>
+          <div class="d-flex flex-column">
+              <div class="photo-thumbnail">
+                  <img src="assets/Fabi1_11-5-22.jpg" alt="Photo 1" class="img-fluid">
+                <div class="photo-overlay" onclick="downloadPhoto('assets/Fabi1_11-5-22.jpg', 'HansBilger_CreditFabianaStriffler.jpg')">
+                    <div class="photo-attribution">(c) Fabiana Striffler</div>
+                    <div class="download-link">Click to download</div>
+                </div>
+              </div>
+              <div class="photo-thumbnail">
+                  <img src="assets/Good-Child-Music-Hans-Bilger-47_small.jpg" alt="Photo 1" class="img-fluid">
+                <div class="photo-overlay" onclick="downloadPhoto('assets/Good-Child-Music-Hans-Bilger-47.jpg', 'HansBilger_CreditMattAndrews.jpg')">
+                    <div class="photo-attribution">(c) Matt Andrews</div>
+                    <div class="download-link">Click to download</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="photo-thumbnail">
+                  <img src="assets/IMG_5006_film.jpg" alt="Photo 1" class="img-fluid">
+                <div class="photo-overlay" onclick="downloadPhoto('assets/IMG_5006_film.jpg', 'HansBilger_CreditFranziskaFriedmann.jpg')">
+                    <div class="photo-attribution">(c) Franziska Friedmann</div>
+                    <div class="download-link">Click to download</div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+
+                <!-- Add more photos with similar structure -->
+            </div>
+        </div>
+
+        <script>
+            function downloadPhoto(url, fileName) {
+                const anchor = document.createElement('a');
+                anchor.href = url;
+                anchor.download = fileName;
+                anchor.style.display = 'none';
+                document.body.appendChild(anchor);
+                anchor.click();
+                document.body.removeChild(anchor);
+            }
+        </script>
+
+        <!-- Bootstrap JS and Popper.js (optional) -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-MtN4R+3H4Mz5H5l1IvqVlNjvI6c2ja5/S1z3hX2z9DM5cd5P5F5s5k3u5j2D5S5C5n5J5" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua5BQQb7s3Az5GzxC8F5F1w2z5F5I5f5F5I5F5I5f5F5I5F5I5F5I5F5I5F5" crossorigin="anonymous"></script>
+    </body>
+    </html>
+
+      <h4 class="text-center page-header fade-in" style="margin-bottom:0em;margin-top:3em">BIOGRAPHY</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="press-text fade-in">
+              <p>
+              <span class="firstcharacter">H</span><span class="smallcaps">ANS BILGER</span> is a musician, sound engineer, and biologist from Brooklyn, New York. The eldest child of a classical singer and a science writer, he spent his childhood playing American folk and country gospel in a family band. In the summers, he went to jazz camp, collected insects, and dissected mice at his aunt’s cancer research lab. These experiences informed his later musical and scientific studies with mentors including Greg Cohen (Ornette Coleman, Laurie Anderson), Paul Kowert (Punch Brothers), Axel Scherka (Staatskapelle Berlin), J.A. Granelli (Mose Allison), Nabil Arbaain (Arabic Music Institute Berlin), Richard Prum (Yale University), Julia Clarke (UT Austin), Mike Ryan (UT Austin), and Mirjam Knörnschild (Humboldt-Universität zu Berlin).
+              </p>
+
+              <p class=”ind”>
+              After completing his B.S. at Yale University in 2016, Bilger moved to Austin, Texas, where he became a sought-after sideman and session bassist. His debut solo album, <em>Meridian</em>, was released in 2019 by Good Child Music. Bilger has been composer-in-residence for Brooklyn-based dance company Cora Dance since 2017. In 2020, he moved to Berlin, where he continues to perform in the jazz, folk, experimental, and Middle Eastern music scenes.
+              </p>
+
+              <p class=”ind”>
+              Bilger began his training as a music producer and sound engineer at the Fred Plaut Recording Studio at the Yale School of Music, assisting in solo/chamber music, symphonic, and big band recordings. He has also worked as an audio engineer at the American podcast network Panoply Media. In 2023, he and composer Eli Greenhoe launched <em>Miniwagon</em>, a music and media production company.
+              </p>
+
+              <p class=”ind”>
+              Bilger remains deeply fascinated by the natural world. He holds a PhD in Ecology, Evolution, and Behavior from the University of Texas at Austin, where his dissertation focused on the evolution of the voice in frogs, bats, and humans. He has published scientific papers on musical structure in birdsong and the anatomy of the avian voice box. He is currently a Visiting Scientist at Berlin’s Museum für Naturkunde – Leibniz Institute for Evolution and Biodiversity Science.
+              </p>
+            </div>
+            <h4 class="text-center page-header fade-in" style="margin-bottom:0em;margin-top:3em">SELECTED QUOTES AND REVIEWS</h4>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="press-text fade-in">
+                    <p style="margin-bottom: 0em">
+                      "Bilger and company played music like what one encounters riding an interstate at night somewhere inside the American cosmos."
+                    </p>
+                    <p class=pub-subtitle>
+                      <b>- New Haven Independent</b>
+                    </p>
+                  </div>
+                  <div class="press-text">
+                  <p style="margin-bottom: 0em">
+                    "Hans Bilger is a renaissance man of the highest order. Crafting his art in the tradition of the best singer/songwriters from the golden years - but with a fresh spirit and clarity needed for our time."
+                  </p>
+                  <p class=pub-subtitle>
+                    <b>- Greg Cohen (Tom Waits, Ornette Coleman, Laurie Anderson)</b>
+                </div>
+                <div class="press-text">
+                <p style="margin-bottom: 0em">
+                  "Hans is a monster—a kind, soft-spoken, curious, virtuosic, poet-monster. He paints radical acoustic landscapes that somehow manage to feel like home…only monsters can do that. I look forward to every new release."
+                </p>
+                <p class=pub-subtitle>
+                  <b>- Mike Errico, singer/songwriter, author, and professor at NYU's Clive Davis Institute of Recorded Music</b>
+              </div>
+
+
+          </div>
+      </div>
+      <footer class="footer pb-3">
+        <hr>
+        <div class="container social-btns">
+          <a class="pr-3" href="https://open.spotify.com/artist/3Bh8LIMsEj0Z3jXX5K8Y00?si=zMlogIyTRuaPwcoZq_tbEg"><img src="assets/spotify.svg" style="height: 30px;"/></a>
+          <a class="pr-3" href="https://airbornecharlie.bandcamp.com/"><img src="assets/Bandcamp-button-bc-circle-black.svg" style="height: 30px;"/></a>
+          <a class="pr-3" href="https://www.facebook.com/airbornecharliemusic"><img src="assets/facebook.svg" style="height: 30px;"/></a>
+          <a class="pr-3" href="https://www.instagram.com/airborne.charlie/"><img src="assets/instagram.svg" style="height: 30px;"/></a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+      </footer>
+
+      <script>
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  function fadeInElements() {
+    fadeElements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      if (elementTop < window.innerHeight - 50) {
+        element.classList.add('fade-in-active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', fadeInElements);
+  // Initial check in case elements are visible when the page loads
+  fadeInElements();
+</script>
+
+
+
+
+</html>
