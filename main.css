@@ -2,13 +2,13 @@ body {
     padding-top: 6em;
     margin: 0;
     background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229);
-    background-size: cover;
+    background-size: contain;
     background-blend-mode: overlay;
 }
 
 .navbar {
   background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229);
-  background-size: cover;
+  background-size: contain;
   background-blend-mode: overlay;
 }
 
@@ -26,9 +26,10 @@ body {
     font-size: 0.75em;
     outline: none;
     border: none;
+    margin:0;
     padding:0em;
-    margin:0em;
 }
+
 
 .nav-link {
     margin-right: 1em !important;
@@ -130,7 +131,39 @@ body {
   margin-top: 2em;
   margin-left: 0em;
   margin-right: 1em;
-  filter: blur(.1px);
+}
+@media only screen and (max-width: 576px) {
+  .bio-text {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .bio-text {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+
+.img-pub{
+}
+@media only screen and (max-width: 576px) {
+  .img-pub {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 480px) {
+  .img-pub {
+    margin-top: 2em;
+  }
+}
+
+.figcaption-science{
+  text-align: center;
+  margin-top: 2em;
 }
 
 .press-text{
@@ -141,7 +174,6 @@ body {
   margin-top: 2em;
   margin-left: 0em;
   margin-right: 1em;
-  filter: blur(.1px);
 }
 
 .science-text{
@@ -149,7 +181,6 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 180%;
-  filter: blur(.1px);
   text-align: left;
   margin-bottom: 3em;
 }
@@ -180,7 +211,6 @@ body {
   font-weight: 200;
   letter-spacing: 1px;
   color: rgba(107,110,112,1);
-  filter: blur(0px);
   padding-bottom: 0em;
   padding-top: 0em;
 }
@@ -190,7 +220,6 @@ body {
   font-weight: 200;
   letter-spacing: 2px;
   color: rgba(107,110,112,1);
-  filter: blur(0px);
   padding-bottom: 0em;
   padding-top: 0em;
 }
@@ -506,7 +535,25 @@ body {
 .bio-photo{
   width: 100%;
   margin-top: 2em;
-  margin-left: -1em;
+  margin-left: -2em;
+  align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .bio-photo {
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right:4em;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio-photo {
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right:4em;
+    align-items: center;
+  }
 }
 
 .index-photo{
@@ -514,6 +561,23 @@ body {
   margin-top: 2em;
   margin-left: -2em;
   align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .index-photo {
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right:0em;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-photo {
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right:0em;
+    align-items: center;
+  }
 }
 
 .discography-photo figure{
@@ -525,7 +589,7 @@ figcaption{
   font-size: 0.75em;
   color: grey;
   padding-top: 0em;
-  margin-left: -1em;
+  margin-left: -2em;
   text-align: left;
 }
 
@@ -546,8 +610,8 @@ index-figcaption{
 }
 
 figure{
-  margin-left: 5em;
-  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
