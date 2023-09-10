@@ -1,13 +1,13 @@
 body {
     padding-top: 6em;
     margin: 0;
-    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229);
+    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229,0);
     background-size: contain;
     background-blend-mode: overlay;
 }
 
 .navbar {
-  background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229);
+  background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229,0);
   background-size: contain;
   background-blend-mode: overlay;
 }
@@ -28,7 +28,7 @@ body {
     border: none;
     margin:0;
     padding:0em;
-    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229);
+    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229,0);
 }
 
 
@@ -38,7 +38,7 @@ body {
     font-family: 'century_schoolbookregular', serif;
     font-size: 18px;
     color: black;
-    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229);
+    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229,0);
 }
 
 .nav-item-current {
