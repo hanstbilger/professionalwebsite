@@ -1,15 +1,19 @@
 body {
     padding-top: 6em;
     margin: 0;
-    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229, .95);
+    background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229, .97);
     background-size: contain;
     background-blend-mode: overlay;
+    /* Fallback for browsers that don't support background-blend-mode */
+    background-color: rgba(218, 225, 229, 0.97);
 }
 
 .navbar {
-  background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229, .95);
+  background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229, .97);
   background-size: contain;
   background-blend-mode: overlay;
+  /* Fallback for browsers that don't support background-blend-mode */
+  background-color: rgba(218, 225, 229, 0.97);
 }
 
 
