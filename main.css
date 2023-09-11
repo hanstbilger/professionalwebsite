@@ -68,6 +68,22 @@ body {
     height: 100%;
 }
 
+.science-header {
+}
+@media (max-width: 992px) {
+  .science-header {
+    margin: 0em;
+  }
+}
+
+.disc-header {
+}
+@media (max-width: 992px) {
+  .disc-header {
+    margin-bottom: 0em;
+  }
+}
+
 
 .overlay {
     position: absolute;
@@ -111,7 +127,7 @@ body {
 @media (max-width: 480px) {
   .bio-text {
     margin-top: 2em;
-    width: 100vw;
+    width: auto;
   }
 }
 
@@ -438,9 +454,7 @@ body {
 
 @media (max-width: 480px) {
   .bio-photo {
-    margin-top: 0em;
-    margin-left: 0em;
-    margin-right:4em;
+    margin: auto;
     align-items: center;
   }
 }
