@@ -4,8 +4,12 @@ body {
     background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229, .97);
     background-size: contain;
     background-blend-mode: overlay;
-    /* Fallback for browsers that don't support background-blend-mode */
-    background-color: rgba(218, 225, 229, 0.97);
+}
+@media (max-width: 992px) {
+  body {
+    background-color: rgba(218, 225, 229, 1);
+
+  }
 }
 
 .navbar {
@@ -13,7 +17,11 @@ body {
   background-size: contain;
   background-blend-mode: overlay;
   /* Fallback for browsers that don't support background-blend-mode */
-  background-color: rgba(218, 225, 229, 0.97);
+}
+@media (max-width: 992px) {
+  .navbar {
+    background-color: rgba(218, 225, 229, 1);
+  }
 }
 
 
