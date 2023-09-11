@@ -1,14 +1,12 @@
 body {
     padding-top: 6em;
-    margin: 0;
     background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229, .97);
     background-size: contain;
     background-blend-mode: overlay;
 }
 @media (max-width: 992px) {
   body {
-    background-color: rgba(218, 225, 229, 1);
-
+    background: rgba(218,225,229, 1);
   }
 }
 
@@ -16,11 +14,10 @@ body {
   background: url('assets/Svema-BW-2_Overlay_small.jpg'), rgba(218,225,229, .97);
   background-size: contain;
   background-blend-mode: overlay;
-  /* Fallback for browsers that don't support background-blend-mode */
 }
 @media (max-width: 992px) {
   .navbar {
-    background-color: rgba(218, 225, 229, 1);
+    background: rgba(218,225,229, 1);
   }
 }
 
@@ -90,50 +87,12 @@ body {
     background: rgba(0, 0, 0, 0.6);
 }
 
-.jumbotron-bio-text{
-  font-family: 'EB Garamond', serif;
-  font-weight: 500;
-  color: rgba(0,0,0,0.95);
-}
-
-.jumbotron-shows-text{
-  font-family: 'EB Garamond', serif;
-  font-weight: 500;
-  color: rgba(255,255,255, .95);
-}
-
-.jumbotron-discography-text{
-  font-family: 'EB Garamond', serif;
-  font-weight: 500;
-  color: rgba(0,0,0,0.95);
-  text-align: center;
-}
-
-.jumbotron-contact-text{
-  font-family: 'EB Garamond', serif;
-  font-weight: 500;
-  font-color: rgba(0,0,0,0.5);
-  text-align: right;
-  padding-top: 4em;
-}
-
-.jumbotron-epk-text{
-  font-family: 'EB Garamond', serif;
-  font-size: 5vw;
-  font-weight: 500;
-  color: rgba(204, 223, 241, 0.85);
-  text-align: center;
-  padding-top: 0%;
-  padding-right: 0%;
-}
 
 .jumbotron-fluid{
   width: 100vw;
 }
 
-.epk.albumart{
-  margin-top: 3em;
-}
+
 
 .bio-text{
   font-family: 'century_schoolbookregular';
@@ -252,7 +211,7 @@ body {
 .firstcharacter{
   color: inherit;
   float: left;
-  font-family: century_schoolbookregular;
+  font-family: 'century_schoolbookregular' serif;
   font-size: 65px;
   line-height: 55px;
   padding-top: 2px;
@@ -260,83 +219,6 @@ body {
   padding-left: 3px;
 }
 
-.epk-bio-text-bold{
-  font-family: 'EB Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 160%;
-  font-color: rgba(0,0,0,1);
-  padding-top: 0em;
-  padding-bottom: 0em;
-}
-
-#jumbotron-shows{
-  background-image: url('assets/DSC3226_pointcrop.jpg');
-  background-size: cover;
-  background-position: 50% 65%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-#jumbotron-discography{
-  background-image: url('assets/Fabi5_11-5-22.jpg');
-  background-size: cover;
-  background-position: 50% 40%;
-  padding-top: 15%;
-  padding-bottom: 15%;
-}
-
-#jumbotron-bio{
-  background-image: url('assets/DSC3320_serious.jpg');
-  background-size: cover;
-  background-position: 50% 9%;
-  padding-top: 13%;
-  padding-bottom: 13%;
-}
-
-#jumbotron-press{
-  background-image: url('assets/DSC3114_blue1.jpg');
-  background-size: cover;
-  background-position: 50% 35%;
-  padding-top: 20%;
-  paddint-bottom: 20%;
-}
-
-
-#jumbotron-epk{
-  background-image: url('assets/DSC3409_smile1crop.jpg');
-  background-size: cover;
-  background-repeat: no-repeat bottom center;
-  background-position: 20% 22%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.epk-heading{
-    font-family: 'Helvetica Neue', serif;
-    font-weight: 300;
-    font-color: rgba(0,0,0,1);
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-}
-
-.epk-subheading{
-    font-family: 'EB Garamond', serif;
-    font-size: 1.25em;
-    font-weight: 500;
-    font-color: rgba(0,0,0,1);
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
-
-.epk-heading-arbiter{
-    font-family: 'Helvetica Neue', serif;
-    font-weight: 300;
-    font-color: rgba(0,0,0,1);
-    margin-top: 25%;
-    margin-bottom: 1em;
-}
 
 .text-responsive {
   font-size: calc(100% + 1vw + 1vh);
