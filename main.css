@@ -144,18 +144,15 @@ body {
   margin-left: 0em;
   margin-right: 1em;
 }
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .bio-text {
     margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
   }
 }
 @media (max-width: 480px) {
   .bio-text {
     margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
+    width: 100vw;
   }
 }
 
@@ -184,9 +181,8 @@ body {
   font-size: 16px;
   line-height: 180%;
   margin-top: 2em;
-  margin-left: 0em;
-  margin-right: 1em;
 }
+
 
 .science-text{
   font-family: 'century_schoolbookregular';
@@ -547,7 +543,6 @@ body {
 .bio-photo{
   width: 100%;
   margin-top: 2em;
-  margin-left: -2em;
   align-items: center;
 }
 @media only screen and (max-width: 576px) {
