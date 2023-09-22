@@ -16,8 +16,9 @@
     <link rel="icon" href="assets/A_colubris_stained_1035_smallcrop.jpg">
 </head>
 
-	<body>
-
+<body>
+  <div class="overlay"></div>
+  <div class="background-image"></div>
     <nav class="navbar navbar-expand-md py-2 fixed-top navbar-light">
       <a class="navbar-brand" href="index.html">
       <img src="assets/Signature_HB.png" width="150" height="67.5" class="d-inline-block align-top" alt="">
@@ -48,15 +49,9 @@
         </ul>
       </div>
     </nav>
-    </div>
-
 
   <main role="main">
-
     <h4 class="text-center page-header fade-in" style="margin-bottom:1.4em;margin-top:3em">PRESS PHOTOS</h4>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+YzVn1Fzmkq4C0CVp5f5+A5F8t5n2F5U02tD" crossorigin="anonymous">
@@ -106,8 +101,6 @@
                 }
             }
         </style>
-    </head>
-    <body>
         <div class="container fade-in">
             <div class="photo-grid">
           <div class="d-flex flex-column">
@@ -183,13 +176,7 @@
                 </div>
               </div>
             </div>
-
             </div>
-
-
-                <!-- Add more photos with similar structure -->
-            </div>
-        </div>
 
         <script>
             function downloadPhoto(url, fileName) {
@@ -202,13 +189,10 @@
                 document.body.removeChild(anchor);
             }
         </script>
-
         <!-- Bootstrap JS and Popper.js (optional) -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-MtN4R+3H4Mz5H5l1IvqVlNjvI6c2ja5/S1z3hX2z9DM5cd5P5F5s5k3u5j2D5S5C5n5J5" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua5BQQb7s3Az5GzxC8F5F1w2z5F5I5f5F5I5F5I5f5F5I5F5I5F5I5F5I5F5" crossorigin="anonymous"></script>
-    </body>
-    </html>
-
+      </div>
       <h4 class="text-center page-header fade-in" style="margin-bottom:0em;margin-top:3em">BIOGRAPHY</h4>
       <div class="container">
         <div class="row">
@@ -253,7 +237,21 @@
           </div>
       </div>
     </div>
+    <script>
+const fadeElements = document.querySelectorAll('.fade-in');
+function fadeInElements() {
+  fadeElements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top;
+    if (elementTop < window.innerHeight - 50) {
+      element.classList.add('fade-in-active');
+    }
+  });
+}
 
+window.addEventListener('scroll', fadeInElements);
+// Initial check in case elements are visible when the page loads
+fadeInElements();
+</script>
       <footer class="footer pb-3">
         <hr>
         <div class="container social-btns">
@@ -265,27 +263,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</body>
       </footer>
-
-      <script>
-  const fadeElements = document.querySelectorAll('.fade-in');
-
-  function fadeInElements() {
-    fadeElements.forEach((element) => {
-      const elementTop = element.getBoundingClientRect().top;
-      if (elementTop < window.innerHeight - 50) {
-        element.classList.add('fade-in-active');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', fadeInElements);
-  // Initial check in case elements are visible when the page loads
-  fadeInElements();
-</script>
-
-
-
-
+</main>
+</body>
 </html>
