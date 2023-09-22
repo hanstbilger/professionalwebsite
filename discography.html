@@ -258,6 +258,21 @@
   // Initial check in case elements are visible when the page loads
   fadeInElements();
 </script>
+<script>
+  // Function to add shadow to navbar when scrolling down
+  function addShadowOnScroll() {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+      navbar.classList.add('shadow');
+    } else {
+      navbar.classList.remove('shadow');
+    }
+  }
+
+  // Attach the scroll event listener
+  window.addEventListener('scroll', addShadowOnScroll);
+</script>
+
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

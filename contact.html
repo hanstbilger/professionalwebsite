@@ -101,6 +101,20 @@ window.addEventListener('scroll', fadeInElements);
 // Initial check in case elements are visible when the page loads
 fadeInElements();
 </script>
+<script>
+  // Function to add shadow to navbar when scrolling down
+  function addShadowOnScroll() {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+      navbar.classList.add('shadow');
+    } else {
+      navbar.classList.remove('shadow');
+    }
+  }
+
+  // Attach the scroll event listener
+  window.addEventListener('scroll', addShadowOnScroll);
+</script>
 
 </main>
 </body>

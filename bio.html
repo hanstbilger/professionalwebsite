@@ -109,6 +109,20 @@
       <a class="pr-3" href="https://www.instagram.com/airborne.charlie/"><img src="assets/instagram.svg" style="height: 30px;"/></a>
     </div>
     <script src="script.js"></script>
+    <script>
+      // Function to add shadow to navbar when scrolling down
+      function addShadowOnScroll() {
+        var navbar = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+          navbar.classList.add('shadow');
+        } else {
+          navbar.classList.remove('shadow');
+        }
+      }
+
+      // Attach the scroll event listener
+      window.addEventListener('scroll', addShadowOnScroll);
+    </script>
     <div class="container">
     <figcaption class="figcaption-science">Photo © Susanne Duppen</figcaption>
     </div>
