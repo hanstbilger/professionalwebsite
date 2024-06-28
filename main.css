@@ -417,6 +417,14 @@ hr{
   text-align: left;
 }
 
+.gig-moreinfo {
+	color: #333;
+  font-family: 'Libre Franklin', serif;
+	font-weight: 300;
+  text-align: left;
+  margin-bottom: 0;
+}
+
 .gig-pers {
 	color: #333;
   font-family: 'Libre Franklin', serif;
