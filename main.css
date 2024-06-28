@@ -415,6 +415,7 @@ hr{
   font-family: 'Libre Franklin', serif;
 	font-weight: 300;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .gig-moreinfo {
@@ -422,7 +423,6 @@ hr{
   font-family: 'Libre Franklin', serif;
 	font-weight: 300;
   text-align: left;
-  margin-bottom: 0;
 }
 
 .gig-pers {
