@@ -431,7 +431,7 @@ hr{
   font-family: 'Libre Franklin', serif;
 	font-weight: 300;
   text-align: left;
-  margin-bottom: 2em;
+  margin-bottom: 0;
 }
 
 .gig-link {
