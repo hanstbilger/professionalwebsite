@@ -434,6 +434,14 @@ hr{
   margin-bottom: 2em;
 }
 
+.gig-link {
+	color: #333;
+  font-family: 'Libre Franklin', serif;
+	font-weight: 300;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
 .container-contact{
   font-family: 'EB Garamond', serif;
   font-size: 18px;
