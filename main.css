@@ -10,6 +10,70 @@
     z-index: -1; /* Send it to the background */
 }
 
+.video-grid-container {
+    display: grid;
+    gap: 16px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-grid-item {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+.video-grid-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+.image-wrap {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 40%; /* Adjust the percentage based on your layout needs */
+}
+
+.image-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-wrap {
+        float: none;
+        margin: 0 auto 20px;
+        max-width: 100%;
+    }
+}
+
+.album-grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.album-player {
+    border: 1px solid #ddd;
+}
+
+
 .overlay {
     position: fixed;
     width: 100%;
@@ -94,6 +158,22 @@ hr{
 }
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+.dropdown-menu {
+    background-color: #8D9DA8; /* Inherits the background color from the parent element (web page) */
+    border: 1px solid black; /* Black border */
+    box-shadow: none; /* Removes the default shadow */
+}
+
+.dropdown-item {
+    color: black; /* Ensures text is readable */
+    font-family: 'century_schoolbookregular', serif;
+    font-size: 18px;
+}
+
+.dropdown-item:hover {
+    background-color: #8D9DA8;
 }
 
 .header {
