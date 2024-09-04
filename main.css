@@ -62,16 +62,29 @@
 }
 
 .album-grid-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .album-player {
+    flex: 0 1 300px;
     border: 1px solid #ddd;
+}
+
+@media (min-width: 620px) {
+    .album-grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .album-player {
+        width: 100%;
+    }
 }
 
 
