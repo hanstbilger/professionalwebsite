@@ -14,6 +14,105 @@
         <link rel="stylesheet" href="assets/AGfont/stylesheet.css" type="text/css" charset="utf-8" />
         <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="icon" href="assets/Recurve_v05_NoText.jpg">
+
+        <!-- MailerLite Universal -->
+        <script>
+            (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+            .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+            n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+            (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+            ml('account', '965266');
+        </script>
+        <!-- End MailerLite Universal -->
+        <style>
+            /* Newsletter Signup Styles */
+            .newsletter-section {
+                padding: 2rem 0;
+                margin-top: 2rem;
+                background-color: transparent;
+            }
+
+            .newsletter-container {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+
+            .newsletter-header {
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+
+            .newsletter-header h4 {
+                font-family: 'EB Garamond', serif;
+                font-weight: 500;
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .newsletter-header p {
+                font-family: 'Libre Franklin', sans-serif;
+                font-size: 1rem;
+                line-height: 1.6;
+                font-weight: 300;
+            }
+
+            .newsletter-form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .newsletter-input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-family: 'Libre Franklin', sans-serif;
+                font-size: 0.9rem;
+            }
+
+            .newsletter-button {
+                padding: 10px 20px;
+                background-color: #000;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: 'Libre Franklin', sans-serif;
+                font-size: 0.9rem;
+                font-weight: 500;
+                transition: background-color 0.3s;
+            }
+
+            .newsletter-button:hover {
+                background-color: #333;
+            }
+
+            .newsletter-privacy {
+                margin-top: 10px;
+                font-size: 0.8rem;
+                color: #666;
+                font-family: 'Libre Franklin', sans-serif;
+                text-align: center;
+            }
+
+            @media (min-width: 768px) {
+                .newsletter-form {
+                    flex-direction: row;
+                }
+
+                .newsletter-input {
+                    flex: 1;
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                }
+
+                .newsletter-button {
+                    width: auto;
+                }
+            }
+        </style>
   </head>
 
 <body>
@@ -80,10 +179,36 @@
               </div>
           </div>
 
+          <!-- Newsletter Section -->
+          <section class="newsletter-section">
+              <div class="newsletter-container">
+                  <div class="newsletter-header">
+                      <h4>Newsletter</h4>
+                      <p><em>I send out a ~monthly newsletter with performance announcements, project updates, recommendations for listening and reading, and thoughts about the art and science of music and sound.</em></p>
+                  </div>
+                  <form class="newsletter-form" action="https://assets.mailerlite.com/jsonp/965266/forms/151201180799731264/subscribe" method="post" target="_blank">
+                      <input class="newsletter-input" type="email" name="fields[email]" placeholder="Email" required>
+                      <button class="newsletter-button" type="submit">Subscribe</button>
+                      <input type="hidden" name="ml-submit" value="1">
+                      <input type="hidden" name="anticsrf" value="true">
+                  </form>
+                  <p class="newsletter-privacy">You can unsubscribe anytime. For more details, review our Privacy Policy.</p>
+              </div>
+          </section>
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
+      <script>
+          function ml_webform_success_24637689() {
+              var $ = ml_jQuery || jQuery;
+              $('.ml-subscribe-form-24637689 .row-success').show();
+              $('.ml-subscribe-form-24637689 .row-form').hide();
+          }
+
+          fetch("https://assets.mailerlite.com/jsonp/965266/forms/151201180799731264/takel");
+      </script>
       <script>
   const fadeElements = document.querySelectorAll('.fade-in');
 
