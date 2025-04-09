@@ -22,6 +22,13 @@
             n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
             (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
             ml('account', '965266');
+
+            // Explicitly show popup after 5 seconds
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    ml('show', 'Cmo00S', true);
+                }, 5000);
+            });
         </script>
         <!-- End MailerLite Universal -->
         <style>
@@ -72,7 +79,7 @@
                 font-size: 0.9rem;
             }
 
-            .newsletter-button {
+            .newsletter-button, .newsletter-popup-button {
                 padding: 10px 20px;
                 background-color: #000;
                 color: #fff;
@@ -83,10 +90,15 @@
                 font-size: 0.9rem;
                 font-weight: 500;
                 transition: background-color 0.3s;
+                display: inline-block;
+                text-align: center;
+                min-width: 180px;
             }
 
-            .newsletter-button:hover {
+            .newsletter-button:hover, .newsletter-popup-button:hover {
                 background-color: #333;
+                color: #fff;
+                text-decoration: none;
             }
 
             .newsletter-privacy {
@@ -186,12 +198,9 @@
                       <h4>Newsletter</h4>
                       <p><em>I send out a ~monthly newsletter with performance announcements, project updates, recommendations for listening and reading, and thoughts about the art and science of music and sound.</em></p>
                   </div>
-                  <form class="newsletter-form" action="https://assets.mailerlite.com/jsonp/965266/forms/151201180799731264/subscribe" method="post" target="_blank">
-                      <input class="newsletter-input" type="email" name="fields[email]" placeholder="Email" required>
-                      <button class="newsletter-button" type="submit">Subscribe</button>
-                      <input type="hidden" name="ml-submit" value="1">
-                      <input type="hidden" name="anticsrf" value="true">
-                  </form>
+                  <div class="text-center">
+                      <button class="newsletter-popup-button ml-onclick-form" onclick="ml('show', 'Cmo00S', true)">Subscribe to Newsletter</button>
+                  </div>
                   <p class="newsletter-privacy">You can unsubscribe anytime. For more details, review our Privacy Policy.</p>
               </div>
           </section>
